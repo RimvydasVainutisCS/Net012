@@ -19,10 +19,11 @@ namespace Net012
             var indexThreeTwo = new Index(2, 1);
             var indexThreeThree = new Index(2, 2);
 
-            var squareMatrixOne = new SquareMatrix(squareMatrixOneSize, 
+            var squareMatrixOne = new SquareMatrix(squareMatrixOneSize,
                                                    indexOneOne, indexOneTwo, indexOneThree,
                                                    indexTwoOne, indexTwoTwo, indexTwoThree,
                                                    indexThreeOne, indexThreeTwo, indexThreeThree);
+
 
 
             int[] array = new int[9];
