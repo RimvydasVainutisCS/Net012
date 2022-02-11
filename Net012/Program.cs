@@ -18,7 +18,7 @@ namespace Net012
             Console.WriteLine(squareMatrixOne.GetIndex(0, 1));
             Console.WriteLine(squareMatrixOne.GetIndex(1, 0));
             Console.WriteLine(squareMatrixOne.GetIndex(1, 1));
-            
+
             Console.WriteLine();
             Console.WriteLine(squareMatrixOne.GetMatrixIndex(0, 0));
             Console.WriteLine(squareMatrixOne.GetMatrixIndex(0, 1));
@@ -32,12 +32,10 @@ namespace Net012
             squareMatrixTwo[1, 1] = "four";
 
             Console.WriteLine();
-            Console.WriteLine(squareMatrixTwo[0,0]);
-            Console.WriteLine(squareMatrixTwo[0,1]);
-            Console.WriteLine(squareMatrixTwo[1,0]);
-            Console.WriteLine(squareMatrixTwo[1,1]);
+            Console.WriteLine(squareMatrixTwo[0, 0]);
+            Console.WriteLine(squareMatrixTwo[0, 1]);
+            Console.WriteLine(squareMatrixTwo[1, 0]);
+            Console.WriteLine(squareMatrixTwo[1, 1]);
         }
-
-
     }
 }

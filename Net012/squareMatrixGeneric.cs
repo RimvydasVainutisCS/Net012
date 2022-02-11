@@ -2,7 +2,7 @@
 {
     public class SquareMatrixGeneric<T> where T : class
     {
-        int _rank = 0;
+        readonly int _rank = 0;
         public T[] Matrix2;
 
         public SquareMatrixGeneric(int rank)
