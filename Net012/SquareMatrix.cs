@@ -21,7 +21,7 @@
             Matrix[(i * _rank) + j] = value;
         }
 
-        public int GetMatrixIndex(int i, int j)
+        public int GetMatrixArrayIndex(int i, int j)
         {
             return (i * _rank) + j;
         }

@@ -20,10 +20,10 @@ namespace Net012
             Console.WriteLine(squareMatrixOne.GetIndex(1, 1));
 
             Console.WriteLine();
-            Console.WriteLine(squareMatrixOne.GetMatrixIndex(0, 0));
-            Console.WriteLine(squareMatrixOne.GetMatrixIndex(0, 1));
-            Console.WriteLine(squareMatrixOne.GetMatrixIndex(1, 0));
-            Console.WriteLine(squareMatrixOne.GetMatrixIndex(1, 1));
+            Console.WriteLine(squareMatrixOne.GetMatrixArrayIndex(0, 0));
+            Console.WriteLine(squareMatrixOne.GetMatrixArrayIndex(0, 1));
+            Console.WriteLine(squareMatrixOne.GetMatrixArrayIndex(1, 0));
+            Console.WriteLine(squareMatrixOne.GetMatrixArrayIndex(1, 1));
 
             var squareMatrixTwo = new SquareMatrixGeneric<string>(2);
             squareMatrixTwo[0, 0] = "one";
