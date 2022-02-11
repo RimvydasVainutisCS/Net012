@@ -8,34 +8,34 @@ namespace Net012
         {
             Console.WriteLine("NET01.2 Generics, delegates and events");
 
-            var squareMatrixOneSize = 9;
-            var indexOneOne = new Index(0, 0);
-            var indexOneTwo = new Index(0, 1);
-            var indexOneThree = new Index(0, 2);
-            var indexTwoOne = new Index(1, 0);
-            var indexTwoTwo = new Index(1, 1);
-            var indexTwoThree = new Index(1, 2);
-            var indexThreeOne = new Index(2, 0);
-            var indexThreeTwo = new Index(2, 1);
-            var indexThreeThree = new Index(2, 2);
+            var squareMatrixOne = new SquareMatrix(2);
 
-            var squareMatrixOne = new SquareMatrix(squareMatrixOneSize,
-                                                   indexOneOne, indexOneTwo, indexOneThree,
-                                                   indexTwoOne, indexTwoTwo, indexTwoThree,
-                                                   indexThreeOne, indexThreeTwo, indexThreeThree);
+            squareMatrixOne.SetIndex(0, 0, 1);
+            squareMatrixOne.SetIndex(0, 1, 2);
+            squareMatrixOne.SetIndex(1, 0, 3);
+            squareMatrixOne.SetIndex(1, 1, 5);
+            Console.WriteLine(squareMatrixOne.GetIndex(0, 0));
+            Console.WriteLine(squareMatrixOne.GetIndex(0, 1));
+            Console.WriteLine(squareMatrixOne.GetIndex(1, 0));
+            Console.WriteLine(squareMatrixOne.GetIndex(1, 1));
+            
+            Console.WriteLine();
+            Console.WriteLine(squareMatrixOne.GetMatrixIndex(0, 0));
+            Console.WriteLine(squareMatrixOne.GetMatrixIndex(0, 1));
+            Console.WriteLine(squareMatrixOne.GetMatrixIndex(1, 0));
+            Console.WriteLine(squareMatrixOne.GetMatrixIndex(1, 1));
 
+            var squareMatrixTwo = new SquareMatrixGeneric<string>(2);
+            squareMatrixTwo[0, 0] = "one";
+            squareMatrixTwo[0, 1] = "two";
+            squareMatrixTwo[1, 0] = "three";
+            squareMatrixTwo[1, 1] = "four";
 
-
-            int[] array = new int[9];
-            array[0] = 11;
-            array[1] = 12;
-            array[2] = 13;
-            array[3] = 21;
-            array[4] = 22;
-            array[5] = 23;
-            array[6] = 31;
-            array[7] = 32;
-            array[8] = 33;
+            Console.WriteLine();
+            Console.WriteLine(squareMatrixTwo[0,0]);
+            Console.WriteLine(squareMatrixTwo[0,1]);
+            Console.WriteLine(squareMatrixTwo[1,0]);
+            Console.WriteLine(squareMatrixTwo[1,1]);
         }
 
 
