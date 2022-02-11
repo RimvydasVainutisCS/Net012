@@ -4,7 +4,7 @@ namespace Net012
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] _)
         {
             Console.WriteLine("NET01.2 Generics, delegates and events");
 
