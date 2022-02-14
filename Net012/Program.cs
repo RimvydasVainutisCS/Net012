@@ -13,7 +13,7 @@ namespace Net012
             squareMatrixOne.SetIndex(0, 0, 1);
             squareMatrixOne.SetIndex(0, 1, 2);
             squareMatrixOne.SetIndex(1, 0, 3);
-            squareMatrixOne.SetIndex(1, 1, 5);
+            squareMatrixOne.SetIndex(2, 1, 5);
             Console.WriteLine(squareMatrixOne.GetIndex(0, 0));
             Console.WriteLine(squareMatrixOne.GetIndex(0, 1));
             Console.WriteLine(squareMatrixOne.GetIndex(1, 0));

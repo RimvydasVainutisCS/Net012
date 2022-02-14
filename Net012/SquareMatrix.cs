@@ -1,4 +1,6 @@
-﻿namespace Net012
+﻿using System;
+
+namespace Net012
 {
     public class SquareMatrix
     {
@@ -8,12 +10,26 @@
         public SquareMatrix(int rank)
         {
             _rank = rank;
-            Matrix = new int[_rank * _rank];
+            if (rank <= 0)
+            {
+                throw new ArgumentException("Matrix Rank has to be positive integer.");
+            }
+            else
+            {
+                Matrix = new int[_rank * _rank];
+            }
         }
 
         public int GetIndex(int i, int j)
         {
-            return Matrix[(i * _rank) + j];
+            if (i < _rank - 1 && j < _rank - 1)
+            {
+                return Matrix[(i * _rank) + j];
+            }
+            else
+            {
+                throw new IndexOutOfRangeException("Your indicies are out of Matrix bounds.");
+            }
         }
 
         public void SetIndex(int i, int j, int value)
