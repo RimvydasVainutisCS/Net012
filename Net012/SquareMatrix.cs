@@ -4,8 +4,18 @@ namespace Net012
 {
     public class SquareMatrix
     {
+        public event EventHandler<EventArgs> OnMatrixElementChange;
+
         readonly int _rank = 0;
-        public int[] Matrix { get; set; }
+        public int[] Matrix
+        {
+            get => this.Matrix;
+            set
+            {
+                this.Matrix = value;
+                this.OnMatrixElementChange?.Invoke(this, Matrix);
+            }
+        }
 
         public SquareMatrix(int rank)
         {
