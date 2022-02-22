@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Net012
 {
     public class Matrix<T>
     {
-        public int RowsNumber { get; }
         public int ColumnsNumber { get; }
+        public int RowsNumber { get; }
 
-        private readonly T[] data;
+        public readonly T[] data;
 
-        public Matrix (int col, int row)
+        public Matrix(int col, int row)
         {
             ColumnsNumber = col;
             RowsNumber = row;

@@ -1,6 +1,6 @@
 ﻿namespace Net012
 {
-    internal class DiagonalMatrix
+    public class DiagonalMatrix
     {
     }
 }
